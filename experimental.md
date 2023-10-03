@@ -27,4 +27,5 @@ for(int i = 0; i < 10; i++)
 ```
 
 [Link](http://youtube.com)
-![Image]([http://url/a.png](https://th.bing.com/th/id/R.7ea67df8f3ea706fdc9b493725fa0835?rik=WIuTpARHDBiwKg&pid=ImgRaw&r=0)https://th.bing.com/th/id/R.7ea67df8f3ea706fdc9b493725fa0835?rik=WIuTpARHDBiwKg&pid=ImgRaw&r=0)	
+![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/5d43f790-c2a5-4729-b4b0-1076226c1ca5)
+
