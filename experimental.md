@@ -6,4 +6,3 @@ certified
 ---------
 > hood
 * classic
-* montage
