@@ -68,11 +68,13 @@ class StringServer
 ## Part 2
 1. Private Key (On lab computer)
 
-![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/d0c71704-685e-482b-8099-768bbf5d68a6)
+![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/56b807f6-a666-4b8f-992e-6013d0aef023)
+
 
 3. Public Key (On ieng6 server)
 
-![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/7a0cc916-8816-4e25-b520-0b043bd7a971)
+![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/ad1c9bcf-f402-4de2-9334-7c130f55774d)
+
 
 5. Logging in ieng6 without password
 
