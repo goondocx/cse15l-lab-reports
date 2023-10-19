@@ -51,6 +51,9 @@ class StringServer
 ```
 ## Screenshot #1
 ![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/cabf35e1-3011-46b5-a758-976f56ea208a)
+1. The main method and handler, also the `.getPath()` and `.getQuery()` methods, which obtains the corresponding parts of the URL to determine which commands to run.
+2. Relevant arguments and fields include `"/add-message"` which specified what the program should look for in the URL, and `.split("=")`, which obtains the string after the = sign to update the string in the server, which is called `list`.
+3. The relevant fields that were changed from this specific request are `String list` which keeps track of the server's string and `int numList`, which controls the number before each new string. From this specific request, the String list changed from `""` to `"1. Hello"`
 
 ## Screenshot #2
 ![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/1c62616b-1fe4-4b55-9684-0cec8156849f)
