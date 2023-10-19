@@ -68,11 +68,13 @@ class StringServer
 ## Part 2
 1. Private Key (On lab computer)
 
+![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/9b4982ee-bd5c-43c5-a012-149fa72a6bed)
 
 
 
 3. Public Key (On ieng6 server)
 
+![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/68e155ca-3f47-438d-a64d-f622491537d4)
 
 
 
