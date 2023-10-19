@@ -1,6 +1,9 @@
 # CSE 15L Lab #2 Blog
-## StringServer Code
-```
+
+
+## Part 1
+### StringServer Code
+```java
 import java.io.IOException;
 import java.net.URI;
 import java.util.ArrayList;
@@ -53,7 +56,27 @@ class StringServer
 ![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/cabf35e1-3011-46b5-a758-976f56ea208a)
 1. The main method and handler, also the `.getPath()` and `.getQuery()` methods, which obtains the corresponding parts of the URL to determine which commands to run.
 2. Relevant arguments and fields include `"/add-message"` which specified what the program should look for in the URL, and `.split("=")`, which obtains the string after the = sign to update the string in the server, which is called `list`.
-3. The relevant fields that were changed from this specific request are `String list` which keeps track of the server's string and `int numList`, which controls the number before each new string. From this specific request, the String list changed from `""` to `"1. Hello"`
+3. The relevant fields that were changed from this specific request are `String list` which keeps track of the server's string and `int numList`, which controls the number before each new string. From this specific request, the String list changed from `""` to `"1. Hello"` since the input after `/add-message?s=` is "Hello".
 
 ## Screenshot #2
 ![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/1c62616b-1fe4-4b55-9684-0cec8156849f)
+1. Same as screenshot #1
+2. Same as screenshot #1
+3. The relevant fields that were changed from this specific request are `String list` which keeps track of the server's string and `int numList`, which controls the number before each new string. From this specific request, the String list changed from `""` to `"2. This is jason"` since the input after `/add-message?s=` is "This is jason".
+
+
+## Part 2
+1. Private Key (On lab computer)
+![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/d0c71704-685e-482b-8099-768bbf5d68a6)
+
+2. Public Key (On ieng6 server)
+![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/7a0cc916-8816-4e25-b520-0b043bd7a971)
+
+3. Logging in ieng6 without password
+![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/89da8302-0908-4250-bf9a-96e2712c0531)
+
+
+## Part 3
+What I learned from the labs:
+1. A lot of terminal commands such as `ls`, `cat`, `ssh`, `scp`, and `mkdir` that I did not know before, such as how `ssh` connects you to a server or how you can make a "folder" with `mkdir` instead of having to use the right click menu in file explorer.
+2. Something that I think is very cool, the command `scp` which securely copies the private login key from personal computers into servers so that we don't have to enter the password everytime I want to log into ieng6, which saves a lot of time.
