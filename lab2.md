@@ -53,13 +53,13 @@ class StringServer
 }
 ```
 ## Screenshot #1
-![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/cabf35e1-3011-46b5-a758-976f56ea208a)
+![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/56b807f6-a666-4b8f-992e-6013d0aef023)
 1. The main method and handler, also the `.getPath()` and `.getQuery()` methods, which obtains the corresponding parts of the URL to determine which commands to run.
 2. Relevant arguments and fields include `"/add-message"` which specified what the program should look for in the URL, and `.split("=")`, which obtains the string after the = sign to update the string in the server, which is called `list`.
 3. The relevant fields that were changed from this specific request are `String list` which keeps track of the server's string and `int numList`, which controls the number before each new string. From this specific request, the String list changed from `""` to `"1. Hello"` since the input after `/add-message?s=` is "Hello".
 
 ## Screenshot #2
-![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/1c62616b-1fe4-4b55-9684-0cec8156849f)
+![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/ad1c9bcf-f402-4de2-9334-7c130f55774d)
 1. Same as screenshot #1
 2. Same as screenshot #1
 3. The relevant fields that were changed from this specific request are `String list` which keeps track of the server's string and `int numList`, which controls the number before each new string. From this specific request, the String list changed from `""` to `"2. This is jason"` since the input after `/add-message?s=` is "This is jason".
@@ -68,12 +68,12 @@ class StringServer
 ## Part 2
 1. Private Key (On lab computer)
 
-![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/56b807f6-a666-4b8f-992e-6013d0aef023)
+
 
 
 3. Public Key (On ieng6 server)
 
-![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/ad1c9bcf-f402-4de2-9334-7c130f55774d)
+
 
 
 5. Logging in ieng6 without password
