@@ -22,8 +22,10 @@
   }
 ```
 3. Symptom
+
 ![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/2fe5e0f1-6aed-4860-a802-de64302c1245)
-5. Original Code (with bugs)
+
+4. Original Code (with bugs)
 ```
 static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
