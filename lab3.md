@@ -90,15 +90,17 @@ The option `-v` is useful when it comes to excluding lines that contain a certai
 Example 2
 ```
 honjo@SKRM-Terminal MINGW64 ~/OneDrive/Desktop/CSE 15L/docsearch/technical (main)
-$ grep -e "death" -e "addiction" government/Alcohol_Problems/Session3-PDF.txt > grep_inverseTriggerTerm.txt
+$ grep -i -v "death" government/Alcohol_Problems/Session3-PDF.txt > grep_inverseTriggerTerm.txt
 ```
 The option `-v` can also be used to eliminate certain trigger terms from documents such as articles, news, or medical documents that contains terms that might be graphic or offensive to certain individuals. In this example we used the option to eliminate the term "death" from a document about alcohol abuse. The original document had 4 occurrences of the term, but the grepped document has none.
 
 Original Document (with trigger term)
+
 ![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/419cad17-4992-461a-a9b5-7fc4da040d85)
 
 
 Augmented Document (trigger term excluded)
+
 ![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/23f21b10-5526-4351-b059-834ec46444a7)
 
 ### Option `-e`
@@ -121,10 +123,12 @@ $ grep -i -v -e "death" -e "addiction" government/Alcohol_Problems/Session3-PDF.
 Continuing from Example 2 of option `-v`, what happens when you need to exclude more than just one trigger terms? The regular `grep` command can only exclude one term at a time so you'll still have to deal with other trigger words. But with the `-e` option, we can exclude both "death" and "addiction" from the document, instead of one of them.
 
 Original Document
+
 ![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/9841b363-ea03-48ef-94c3-551bb15c1f29)
 ![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/a429cede-f595-4de3-beab-dfb96167d4a4)
 
 Augmented Document
+
 ![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/93e4c24e-b4bb-4af7-a1c2-8dc6539d86a8)
 ![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/fc147d4a-311c-477d-91f4-1836cfedc4cf)
 
