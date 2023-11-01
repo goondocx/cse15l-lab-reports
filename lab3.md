@@ -101,5 +101,50 @@ Original Document (with trigger term)
 Augmented Document (trigger term excluded)
 ![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/23f21b10-5526-4351-b059-834ec46444a7)
 
+### Option `-e`
+Example 1
+```
+honjo@SKRM-Terminal MINGW64 ~/OneDrive/Desktop/CSE 15L/docsearch/technical (main)
+$ grep -i  -e "polymerase" -e "hiv" biomed/1471-2091-3-18.txt > grep_multipleBM.txt
 
+honjo@SKRM-Terminal MINGW64 ~/OneDrive/Desktop/CSE 15L/docsearch/technical (main)
+$ wc grep_multipleBM.txt
+  77  698 4880 grep_multipleBM.txt
+```
+The option `-e` is an especially useful one as it allows the `grep` command to search for multiple terms in a file, thus eliminating the hassle of searching for one term at a time. In this example, the command greps all the lines that contain either terms "polymerase" or "hiv" and outputs the result into anothe text file.
 
+Example 2
+```
+honjo@SKRM-Terminal MINGW64 ~/OneDrive/Desktop/CSE 15L/docsearch/technical (main)
+$ grep -i -v -e "death" -e "addiction" government/Alcohol_Problems/Session3-PDF.txt > grep_multipleAlc.txt
+```
+Continuing from Example 2 of option `-v`, what happens when you need to exclude more than just one trigger terms? The regular `grep` command can only exclude one term at a time so you'll still have to deal with other trigger words. But with the `-e` option, we can exclude both "death" and "addiction" from the document, instead of one of them.
+
+Original Document
+![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/9841b363-ea03-48ef-94c3-551bb15c1f29)
+![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/a429cede-f595-4de3-beab-dfb96167d4a4)
+
+Augmented Document
+![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/93e4c24e-b4bb-4af7-a1c2-8dc6539d86a8)
+![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/fc147d4a-311c-477d-91f4-1836cfedc4cf)
+
+### Option `-c`
+Example 1
+```
+honjo@SKRM-Terminal MINGW64 ~/OneDrive/Desktop/CSE 15L/docsearch/technical (main)
+$ grep -c -i  -e "gene" -e "gnrh" biomed/1471-2105-3-26.txt
+101
+```
+The option `-c` suppresses the normal output and instead prints a count of matching lines for each input file. This command can be especially useful when working with very large sets of data where individual pieces of information aren't of great significance but rather the trend of the dataset. In this example we grepped for lines that contain either terms "gene" or "gnrh" regardless of their capitalization in a specific biomed document. But a potentially better use of this option would be, for example, a sales analyst having to decide if a particular product/products are generating enough sales, from the entire sales history of their platform in the form of a text file. In this case they can grep for lines that contains either product names with `-c`.
+
+Example 2
+```
+honjo@SKRM-Terminal MINGW64 ~/OneDrive/Desktop/CSE 15L/docsearch/technical (main)
+$ grep -i -c "information" 911report/chapter-8.txt
+63
+```
+In this example, the `-c` command counts the number of lines that contain the term "information" from a 9/11 document. Another good use of this command option could be vocabulary diversity analysis, for example, for an academic paper. If there are too many lines containing the exact same vocabulary, maybe it's time to look up some synonyms.
+
+## Sources
+1. https://man7.org/linux/man-pages/man1/grep.1.html (`grep`, `-i`, `-v`, `-c`)
+2. https://phoenixnap.com/kb/grep-multiple-strings (`-e`)
