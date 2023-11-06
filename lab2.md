@@ -1,4 +1,4 @@
-# CSE 15L Lab #2 Blog
+haram# CSE 15L Lab #2 Blog
 
 
 ## Part 1
@@ -68,7 +68,7 @@ class StringServer
 ## Part 2
 1. Private Key (On lab computer)
 
-![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/9b4982ee-bd5c-43c5-a012-149fa72a6bed)
+![image](https://github.com/goondocx/cse15l-lab-reports/assets/100145953/662debfd-ee65-40d7-807c-543541ebd178)
 
 
 
