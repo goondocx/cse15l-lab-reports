@@ -8,7 +8,7 @@
 `<up><enter>`
 
 ### Commands Summary:
-I pressed the *<up>* key to cycle up since `ssh` was the previous command that I ran. This command connects my local terminal to the ieng6 computer.
+I pressed the `<up>` key to cycle up since `ssh` was the previous command that I ran. This command connects my local terminal to the ieng6 computer.
 
 
 ## Step 5 - Clone Fork Repository from GitHub Account
