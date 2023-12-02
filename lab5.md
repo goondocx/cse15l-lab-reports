@@ -25,6 +25,7 @@ Hello again. After plugging in the `.*` option in place of the hard-coded parame
 ---
 ### Setup Informations (Directory structure, Codes, Command line, Bug fixes)
 1. File & Directory Structure:
+
 ```
 list-examples-grader
 - grading-area/
@@ -38,6 +39,7 @@ list-examples-grader
 
 
 2. Content of `grade.sh` before bug fix
+
 ```
 # checks if filter exists with correct sigs
 if [[ `grep -c 'static List<String> filter(List<String> s, StringChecker sc)' grading-area/ListExamples.java` == 1 ]]
