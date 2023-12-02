@@ -24,7 +24,7 @@ Hello again. After plugging in the `.*` option in place of the hard-coded parame
 
 ---
 ### Setup Informations (Directory structure, Codes, Command line, Bug fixes)
-1. File & Directory Structure:
+File & Directory Structure:
 
 ```
 list-examples-grader
@@ -37,8 +37,8 @@ list-examples-grader
 - grade.sh
 ```
 
-
-2. Content of `grade.sh` before bug fix
+---
+Content of `grade.sh` before bug fix
 
 ```
 # checks if filter exists with correct sigs
@@ -58,13 +58,13 @@ else
 fi
 ```
 
-
-3. Command line execution
+---
+Command line execution
    
   `bash grade.sh` with working directory in `list-examples-grader/`
 
-
-4. Bug fixes
+---
+Bug fixes
 
   Replaced the parameter variable names `s`, `sc`, `list1` and `list2` with wildcard option `.*`
 
