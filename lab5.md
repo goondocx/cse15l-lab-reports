@@ -33,12 +33,67 @@ list-examples-grader
     - hamcret-core-1.3.jar
     - junit-4.13.2.jar
   - ListExamples.java
-  - TestListExamples.java
 - grade.sh
 ```
 
 ---
-Content of `grade.sh` before bug fix
+Contents of `ListExamples.java`
+
+```
+import java.util.ArrayList;
+import java.util.List;
+
+interface StringChecker { boolean checkString(String s); }
+
+class ListExamples
+{
+  static List<String> filter(List<String> a, StringChecker b) 
+  {
+    List<String> result = new ArrayList<>();
+    for(String s: a) 
+    {
+      if(b.checkString(s)) 
+      {
+        result.add(s);
+      }
+    }
+    return result;
+  }
+
+  static List<String> merge(List<String> x, List<String> y) 
+  {
+    List<String> result = new ArrayList<>();
+    int index1 = 0, index2 = 0;
+    while(index1 < x.size() && index2 < y.size()) 
+    {
+      if(x.get(index1).compareTo(y.get(index2)) < 0) 
+      {
+        result.add(x.get(index1));
+        index1 += 1;
+      }
+      else 
+      {
+        result.add(y.get(index2));
+        index2 += 1;
+      }
+    }
+    while(index1 < x.size()) 
+    {
+      result.add(x.get(index1));
+      index1 += 1;
+    }
+    while(index2 < y.size()) 
+    {
+      result.add(y.get(index2));
+      index2 += 1;
+    }
+    return result;
+  }
+}
+```
+
+---
+Contents of `grade.sh` before bug fix
 
 ```
 # checks if filter exists with correct sigs
