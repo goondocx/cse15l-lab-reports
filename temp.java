@@ -1,16 +1,7 @@
 
 import java.util.ArrayList;
 import java.util.Collection;
-/**
- * Name:Francis Li
- * Email: sol026@ucsd.edu
- * PID: A17439644
- * Sources Used: JDK 17 Docs, publicTester, TA 
- * 
- * This class contains my implementation for MinHeap
- * Instance variables:
- * data - the arraylist of elements
- */
+
 public class MyMinHeap<E extends Comparable<E>> implements MinHeapInterface<E>{
     protected ArrayList<E> data;
 
